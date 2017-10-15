@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour {
 
+	//positions
+	public GameObject player;
+	public Transform enemy;
+
 	//movement speed
-	public float speed = 2f;	
+	public float speed = 2f;
+
 
 	// Use this for initialization
 	void Start () {
 		//move the ball upward
-		GetComponent<Rigidbody2D> ().velocity = Vector2.left * speed;
+		//GetComponent<Rigidbody2D> ().velocity = player.position * speed;
+	}
+
+	void update() {
+		//enemy.position = 
 	}
 		
 
